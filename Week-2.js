@@ -51,14 +51,20 @@ AlphabetSoup('hooplah');
 
 // 5. Given the arrays below, use a for loop to print one value from each array concatenated together. How would your code need to change to accomodate arrays of different lengths?
 
+// output of the first function should be: "1 ducks"
+
 var nums = [1, 5, 88, 2, 5, 42, 57, 101]
 
 var nouns = ["ducks", "telephone booth", "the enterprise", "robots", "amazon", "eraser", "zafod", "a"]
 
-// output of the first function should be: "1 ducks"
-
-let combo = function(nums[],nouns[]){
-	for (var i = nums.length - 1; i >= 0; i--) {
-		nums[i]
+var h = function(){
+	if (nums.length > nouns.length){
+		return nouns.length
+	} else {
+		return nums.length
 	}
+}
+
+for (i=0; i<h(); i++){
+	console.log(nums[i] + " " + nouns[i])
 }
